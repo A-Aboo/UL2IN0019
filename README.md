@@ -2,7 +2,7 @@
   <img src="Su.svg.png" width="170" alt="Sorbonne Université Logo">
 </p>
 
-# SQL TME Portfolio — TME 4 to TME 10
+# SQL TME — TME 4 - TME 10
 
 **Université : Sorbonne Université**  
 **Author : A-Aboo**  
@@ -34,7 +34,7 @@ The goal of this work is to understand relational databases step by step, from s
 
 ---
 
-## Technologies Used
+## 
 
 ```text
 SQL
