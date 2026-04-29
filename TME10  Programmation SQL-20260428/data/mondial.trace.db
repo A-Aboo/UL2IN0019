@@ -1,0 +1,368 @@
+2026-04-29 10:15:21.773022Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "COUNTRY" not found; SQL statement:
+select * from  country where country like '%S%' [42122-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.condition.CompareLike.optimize(CompareLike.java:149)
+	at org.h2.expression.Expression.optimizeCondition(Expression.java:148)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1177)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:489)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:316)
+2026-04-29 10:15:28.922469Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "NOM" not found; SQL statement:
+select * from  country where nom like '%S%' [42122-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.condition.CompareLike.optimize(CompareLike.java:149)
+	at org.h2.expression.Expression.optimizeCondition(Expression.java:148)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1177)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:489)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:316)
+2026-04-29 10:15:45.121182Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "NOME" not found; SQL statement:
+select * from  country where nome like '%S%' [42122-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.condition.CompareLike.optimize(CompareLike.java:149)
+	at org.h2.expression.Expression.optimizeCondition(Expression.java:148)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1177)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:489)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:316)
+2026-04-29 10:19:50.947025Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REGION" not found; SQL statement:
+ select * from region  [42102-224]
+2026-04-29 10:21:36.744596Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BORDER" not found; SQL statement:
+select * from border [42102-224]
+2026-04-29 10:26:23.104331Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COUNTY" not found; SQL statement:
+select name , code , population from county  [42102-224]
+2026-04-29 10:27:05.085385Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement " select name , code , population from country  order by population desc [*]limmit 10"; SQL statement:
+ select name , code , population from country  order by population desc limmit 10 [42000-224]
+2026-04-29 10:27:42.384218Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000a        [*]# Requête SQL pour obtenir les 3 pays les plus peuplés d'un continent donné\000a    "; SQL statement:
+
+        # Requête SQL pour obtenir les 3 pays les plus peuplés d'un continent donné
+     [42000-224]
+2026-04-29 10:29:57.010869Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ETHNIGROUP" not found; SQL statement:
+select * from ethnigroup   [42102-224]
+2026-04-29 10:30:01.778687Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ETHNEGROUP" not found; SQL statement:
+select * from ethnegroup   [42102-224]
+2026-04-29 10:34:02.593853Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select c.* from country c [*]ENCOMPASSES e group by c.country e.name  "; SQL statement:
+select c.* from country c ENCOMPASSES e group by c.country e.name   [42000-224]
+2026-04-29 10:34:10.939053Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select * from country c [*]ENCOMPASSES e group by c.country e.name  "; SQL statement:
+select * from country c ENCOMPASSES e group by c.country e.name   [42000-224]
+2026-04-29 10:34:15.556750Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select * from country c [*]ENCOMPASSES e  "; SQL statement:
+select * from country c ENCOMPASSES e   [42000-224]
+2026-04-29 10:34:26.503718Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select c.* from country c, ENCOMPASSES e group by c.country [*]e.name  "; SQL statement:
+select c.* from country c, ENCOMPASSES e group by c.country e.name   [42000-224]
+2026-04-29 10:34:50.132642Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]selec t* from country c, ENCOMPASSES e group by e.name   "; expected "SAVEPOINT, SCRIPT, SHUTDOWN"; SQL statement:
+selec t* from country c, ENCOMPASSES e group by e.name    [42001-224]
+2026-04-29 10:35:01.353775Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]selec t* from country c, ENCOMPASSES e group by e.contenant   "; expected "SAVEPOINT, SCRIPT, SHUTDOWN"; SQL statement:
+selec t* from country c, ENCOMPASSES e group by e.contenant    [42001-224]
+2026-04-29 10:35:06.681963Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]selec t* from country c, ENCOMPASSES e group by e.continant   "; expected "SAVEPOINT, SCRIPT, SHUTDOWN"; SQL statement:
+selec t* from country c, ENCOMPASSES e group by e.continant    [42001-224]
+2026-04-29 10:35:10.484473Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]selec t* from country c, ENCOMPASSES e   "; expected "SAVEPOINT, SCRIPT, SHUTDOWN"; SQL statement:
+selec t* from country c, ENCOMPASSES e    [42001-224]
+2026-04-29 10:35:27.309689Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "E.COUNTRY" must be in the GROUP BY list; SQL statement:
+select * from country c, ENCOMPASSES e group by continent [90016-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.updateAggregate(ExpressionColumn.java:266)
+	at org.h2.command.query.Select.updateAgg(Select.java:539)
+	at org.h2.command.query.Select.gatherGroup(Select.java:522)
+	at org.h2.command.query.Select.queryGroup(Select.java:488)
+	at org.h2.command.query.Select.queryWithoutCache(Select.java:828)
+	at org.h2.command.query.Query.queryWithoutCacheLazyCheck(Query.java:197)
+	at org.h2.command.query.Query.query(Query.java:520)
+	at org.h2.command.query.Query.query(Query.java:483)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:252)
+	at org.h2.command.Command.executeQuery(Command.java:192)
+	at org.h2.jdbc.JdbcPreparedStatement.execute(JdbcPreparedStatement.java:259)
+2026-04-29 10:35:30.861849Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "E.COUNTRY" must be in the GROUP BY list; SQL statement:
+select * from country c, ENCOMPASSES e group by e.continent [90016-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.updateAggregate(ExpressionColumn.java:266)
+	at org.h2.command.query.Select.updateAgg(Select.java:539)
+	at org.h2.command.query.Select.gatherGroup(Select.java:522)
+	at org.h2.command.query.Select.queryGroup(Select.java:488)
+	at org.h2.command.query.Select.queryWithoutCache(Select.java:828)
+	at org.h2.command.query.Query.queryWithoutCacheLazyCheck(Query.java:197)
+	at org.h2.command.query.Query.query(Query.java:520)
+	at org.h2.command.query.Query.query(Query.java:483)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:252)
+	at org.h2.command.Command.executeQuery(Command.java:192)
+	at org.h2.jdbc.JdbcPreparedStatement.execute(JdbcPreparedStatement.java:259)
+2026-04-29 10:35:38.046689Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "E.COUNTRY" must be in the GROUP BY list; SQL statement:
+select e.* from country c, ENCOMPASSES e group by e.continent [90016-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.updateAggregate(ExpressionColumn.java:266)
+	at org.h2.command.query.Select.updateAgg(Select.java:539)
+	at org.h2.command.query.Select.gatherGroup(Select.java:522)
+	at org.h2.command.query.Select.queryGroup(Select.java:488)
+	at org.h2.command.query.Select.queryWithoutCache(Select.java:828)
+	at org.h2.command.query.Query.queryWithoutCacheLazyCheck(Query.java:197)
+	at org.h2.command.query.Query.query(Query.java:520)
+	at org.h2.command.query.Query.query(Query.java:483)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:252)
+	at org.h2.command.Command.executeQuery(Command.java:192)
+	at org.h2.jdbc.JdbcPreparedStatement.execute(JdbcPreparedStatement.java:259)
+2026-04-29 10:36:13.325274Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select * from ENCOMPASSES  group by  by [*]continent"; SQL statement:
+select * from ENCOMPASSES  group by  by continent [42000-224]
+2026-04-29 10:36:18.620854Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "PUBLIC.ENCOMPASSES.COUNTRY" must be in the GROUP BY list; SQL statement:
+select * from ENCOMPASSES  group   by continent [90016-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.updateAggregate(ExpressionColumn.java:266)
+	at org.h2.command.query.Select.updateAgg(Select.java:539)
+	at org.h2.command.query.Select.gatherGroup(Select.java:522)
+	at org.h2.command.query.Select.queryGroup(Select.java:488)
+	at org.h2.command.query.Select.queryWithoutCache(Select.java:828)
+	at org.h2.command.query.Query.queryWithoutCacheLazyCheck(Query.java:197)
+	at org.h2.command.query.Query.query(Query.java:520)
+	at org.h2.command.query.Query.query(Query.java:483)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:252)
+	at org.h2.command.Command.executeQuery(Command.java:192)
+	at org.h2.jdbc.JdbcPreparedStatement.execute(JdbcPreparedStatement.java:259)
+2026-04-29 10:36:23.159455Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "PUBLIC.ENCOMPASSES.COUNTRY" must be in the GROUP BY list; SQL statement:
+select * from ENCOMPASSES  group by continent [90016-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.updateAggregate(ExpressionColumn.java:266)
+	at org.h2.command.query.Select.updateAgg(Select.java:539)
+	at org.h2.command.query.Select.gatherGroup(Select.java:522)
+	at org.h2.command.query.Select.queryGroup(Select.java:488)
+	at org.h2.command.query.Select.queryWithoutCache(Select.java:828)
+	at org.h2.command.query.Query.queryWithoutCacheLazyCheck(Query.java:197)
+	at org.h2.command.query.Query.query(Query.java:520)
+	at org.h2.command.query.Query.query(Query.java:483)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:252)
+	at org.h2.command.Command.executeQuery(Command.java:192)
+	at org.h2.jdbc.JdbcPreparedStatement.execute(JdbcPreparedStatement.java:259)
+2026-04-29 10:41:43.565200Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select c.name , c.population  from ENCOMPASSES e , country c  where c.code  = e.country and e.continent ='Africa'  order by  population  desc  limit 3               [*]union all                select c.name ,c.population from encompasses e  , country c where c.code = e.country and e.contient = 'Europe '  "; SQL statement:
+select c.name , c.population  from ENCOMPASSES e , country c  where c.code  = e.country and e.continent ='Africa'  order by  population  desc  limit 3               union all                select c.name ,c.population from encompasses e  , country c where c.code = e.country and e.contient = 'Europe '   [42000-224]
+2026-04-29 10:41:48.995356Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select c.name , c.population  from ENCOMPASSES e , country c  where c.code  = e.country and e.continent ='Africa'  order by  population  desc  limit 3               [*]union all                select c.name ,c.population from encompasses e  , country c where c.code = e.country and e.contient = 'Europe'  "; SQL statement:
+select c.name , c.population  from ENCOMPASSES e , country c  where c.code  = e.country and e.continent ='Africa'  order by  population  desc  limit 3               union all                select c.name ,c.population from encompasses e  , country c where c.code = e.country and e.contient = 'Europe'   [42000-224]
+2026-04-29 10:42:15.870578Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select c.name , c.population  from ENCOMPASSES e , country c  where c.code  = e.country and e.continent ='Africa'  order by  population  desc  limit 3               [*]union all                select c.name , c.population  from encompasses e  , country c where c.code = e.country and e.continent = 'Europe'  "; SQL statement:
+select c.name , c.population  from ENCOMPASSES e , country c  where c.code  = e.country and e.continent ='Africa'  order by  population  desc  limit 3               union all                select c.name , c.population  from encompasses e  , country c where c.code = e.country and e.continent = 'Europe'   [42000-224]
+2026-04-29 10:42:32.078070Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select c.name , c.population  from ENCOMPASSES e , country c  where c.code  = e.country and e.continent ='Africa'  order by  population  desc  limit 3               [*]union all                select c.name , c.population  from encompasses e  , country c where c.code = e.country and e.continent = 'Europe' order by population desc limit 3  "; SQL statement:
+select c.name , c.population  from ENCOMPASSES e , country c  where c.code  = e.country and e.continent ='Africa'  order by  population  desc  limit 3               union all                select c.name , c.population  from encompasses e  , country c where c.code = e.country and e.continent = 'Europe' order by population desc limit 3   [42000-224]
+2026-04-29 10:46:02.990136Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Invalid value "1" for parameter "parameterIndex" [90008-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:658)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:298)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1408)
+	at org.h2.jdbc.JdbcPreparedStatement.setObject(JdbcPreparedStatement.java:509)
+2026-04-29 10:46:08.680474Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Invalid value "1" for parameter "parameterIndex" [90008-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:658)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:298)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1408)
+	at org.h2.jdbc.JdbcPreparedStatement.setObject(JdbcPreparedStatement.java:509)
+2026-04-29 10:46:55.024928Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "NOM_CONTINENT" not found; SQL statement:
+
+        select c.name , c.population  from nom_continent e , country c  where c.code  = e.country and e.continent ='Africa'  order by  population  desc  limit 3 
+
+     [42102-224]
+2026-04-29 10:47:09.059082Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Invalid value "1" for parameter "parameterIndex" [90008-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:658)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:298)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1408)
+	at org.h2.jdbc.JdbcPreparedStatement.setObject(JdbcPreparedStatement.java:509)
+2026-04-29 10:56:06.894747Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "LAC" not found; SQL statement:
+
+        select l.name , l.area , l.depth from lac l where l.country = ? and l.region = ?
+     [42102-224]
+2026-04-29 10:57:03.721322Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "LAC" not found; SQL statement:
+select * from lac [42102-224]
+2026-04-29 10:57:08.708032Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "LACS" not found; SQL statement:
+select * from lacs [42102-224]
+2026-04-29 10:57:37.747215Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "L.COUNTRY" not found; SQL statement:
+select l.name , l.area , l.depth from lake l where l.country = ? and l.region = ? [42122-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.condition.Comparison.optimize(Comparison.java:147)
+	at org.h2.expression.condition.ConditionAndOr.optimize(ConditionAndOr.java:136)
+	at org.h2.expression.Expression.optimizeCondition(Expression.java:148)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1177)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:489)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:316)
+2026-04-29 11:01:45.098998Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select * [*]form mountain limit 10"; SQL statement:
+select * form mountain limit 10 [42000-224]
+2026-04-29 11:02:16.309638Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select * [*]form geo_mountain limit 10"; SQL statement:
+select * form geo_mountain limit 10 [42000-224]
+2026-04-29 11:02:51.223011Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]seelct * from geo_mountain"; expected "SAVEPOINT, SCRIPT, SHUTDOWN"; SQL statement:
+seelct * from geo_mountain [42001-224]
+2026-04-29 11:03:05.787956Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select * from geo_mountain limit 1-[*]"; SQL statement:
+select * from geo_mountain limit 1- [42000-224]
+2026-04-29 11:11:16.641948Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select * from lake limit [*]where name like '%Como%'5"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+select * from lake limit where name like '%Como%'5 [42001-224]
+2026-04-29 11:11:23.432384Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select * from lake limit [*]where name like '%Como%' 5"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+select * from lake limit where name like '%Como%' 5 [42001-224]
+2026-04-29 11:11:37.289461Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select * from lake limit [*]where name = 'Como' 5"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+select * from lake limit where name = 'Como' 5 [42001-224]
+2026-04-29 11:11:44.823151Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select * from lake limit [*]where name = 'Como' limit 5"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+select * from lake limit where name = 'Como' limit 5 [42001-224]
+2026-04-29 11:11:48.718341Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select * from lake limit [*]where name = 'Como'"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+select * from lake limit where name = 'Como' [42001-224]
+2026-04-29 12:40:40.263241Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000a         [*]# Requête SQL pour obtenir les rivières d'une région donnée\000a    "; SQL statement:
+
+         # Requête SQL pour obtenir les rivières d'une région donnée
+     [42000-224]
+2026-04-29 12:42:35.819037Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Invalid value "1" for parameter "parameterIndex" [90008-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:658)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:298)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1408)
+	at org.h2.jdbc.JdbcPreparedStatement.setObject(JdbcPreparedStatement.java:509)
+2026-04-29 12:44:55.737968Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BOARDERS" not found; SQL statement:
+select * from boarders  [42102-224]
+2026-04-29 12:45:22.991076Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "GEO_BORDERS" not found; SQL statement:
+select * from geo_borders limit 2  [42102-224]
+2026-04-29 12:48:03.579691Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Invalid value "2" for parameter "parameterIndex" [90008-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:658)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:298)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1408)
+	at org.h2.jdbc.JdbcPreparedStatement.setObject(JdbcPreparedStatement.java:509)
+2026-04-29 12:48:40.409113Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Invalid value "2" for parameter "parameterIndex" [90008-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:658)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:298)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1408)
+	at org.h2.jdbc.JdbcPreparedStatement.setObject(JdbcPreparedStatement.java:509)
+2026-04-29 12:49:36.789436Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Invalid value "2" for parameter "parameterIndex" [90008-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:658)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:298)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1408)
+	at org.h2.jdbc.JdbcPreparedStatement.setObject(JdbcPreparedStatement.java:509)
+2026-04-29 12:49:38.925902Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Invalid value "2" for parameter "parameterIndex" [90008-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:658)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:298)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1408)
+	at org.h2.jdbc.JdbcPreparedStatement.setObject(JdbcPreparedStatement.java:509)
+2026-04-29 12:49:58.150366Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Invalid value "2" for parameter "parameterIndex" [90008-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:658)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:298)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1408)
+	at org.h2.jdbc.JdbcPreparedStatement.setObject(JdbcPreparedStatement.java:509)
+2026-04-29 12:51:34.273176Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Invalid value "1" for parameter "parameterIndex" [90008-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:658)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:298)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1408)
+	at org.h2.jdbc.JdbcPreparedStatement.setObject(JdbcPreparedStatement.java:509)
